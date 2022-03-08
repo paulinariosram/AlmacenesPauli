@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inicio</title>
+</head>
+<body>
+	<h1>Bienvenidos a su tienda virtual</h1>
+</body>
+<h2>A continuación podrá hacer las busquedas deseadas:</h2>
+<form action="ServidorPeticiones?parametroOperacion=buscarCalzado"
+	method="post">
+	<label>Ingrese la referencia del zapato: </label> <input
+		name="refCalzado">
+	<button>Buscar calzado</button>
+</form>
+<br />
+<form action="ServidorPeticiones?parametroOperacion=buscarRopa"
+	method="post">
+	<label>Ingrese la referencia de la prenda: </label> <input
+		name="refPrenda">
+	<button>Buscar prenda</button>
+</form>
+<br />
+	<form action="ServidorPeticiones?parametroOperacion=buscarCliente"
+	method="post">
+	<label>Ingrese la cedula del cliente: </label> <input name="cedulaCliente">
+	<button>Buscar cliente</button></form>
+	<br /> <br />
+	<form action="ServidorPeticiones?parametroOperacion=buscarEmpleado"
+		method="post">
+		<label>Ingrese la cedula del empleado: </label> <input
+			name="cedulaEmpleado">
+		<button>Buscar empleado</button>
+	</form>
+	<br /> <br />
+	<form action="ServidorPeticiones?parametroOperacion=facturar"
+		method="post">
+			<button>ir a facturar</button>
+	</form>
+</html>
